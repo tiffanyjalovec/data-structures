@@ -21,9 +21,8 @@ HashTable.prototype.insert = function(k, v) {
     //  push the new array into the bucket
     bucket.push([k, v]);
     this._storage.set(index, bucket);
-  }
+  } else {
   //  if it's not empty
-  else {
   //  does k already exist here?
 
     let bucket = this._storage.get(index);
