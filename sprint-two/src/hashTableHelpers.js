@@ -10,6 +10,7 @@
 // Usage:
 //   limitedArray.set(3, 'hi');
 //   limitedArray.get(3); // returns 'hi'
+//don't do thislimitedArray[3] = 'hi';
 
 var LimitedArray = function(limit) {
   var storage = [];

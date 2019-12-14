@@ -19,8 +19,9 @@ var LinkedList = function() {
       return undefined;
     }
     let tempNode = list.head;
-    delete list.head;
+    //delete list.head;
     list.head = tempNode.next;
+    if (list.head === null) { list.tail = null; }
     return tempNode.value;
   };
 
