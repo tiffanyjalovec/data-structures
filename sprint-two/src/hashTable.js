@@ -10,8 +10,6 @@ var HashTable = function() {
   this._storage = LimitedArray(this._limit);
 };
 
-// ('Steven', 'seagal')
-
 HashTable.prototype.insert = function(k, v) {
   var index = getIndexBelowMaxForKey(k, this._limit);
   //check if that index is empty
